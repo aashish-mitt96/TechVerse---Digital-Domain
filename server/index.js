@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: [ 'http://localhost:5173','http'], 
+  origin: [ 'http://localhost:5173', 'https://tech-verse-digital-domain-ntez.vercel.app/', 'http'], 
   methods: ["POST", "GET", "OPTIONS"], 
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization",],
