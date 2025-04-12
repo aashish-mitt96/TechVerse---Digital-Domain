@@ -35,3 +35,7 @@
 
 ---
 
+📺 See Live Demo
+Check out the live version of Nextimes in action:
+
+🌍 https://tech-verse-digital-domain-vtvq.vercel.app/
