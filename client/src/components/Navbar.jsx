@@ -19,16 +19,16 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex space-x-4">
             <p>Follow us on</p>
-            <a href="https://www.instagram.com/canopux_team/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="w-5 h-5 md:w-6 md:h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
             </a>
-            <a href="https://www.linkedin.com/company/canopux/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="w-5 h-5 md:w-6 md:h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61573815500432" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="w-5 h-5 md:w-6 md:h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
             </a>
-            <a href="https://twitter.com/canopux_team" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
               <FaXTwitter className="w-5 h-5 md:w-6 md:h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
             </a>
           </div>
@@ -45,16 +45,16 @@ const Navbar = () => {
             <a href="/about" className="hover:text-gray-400 transition-transform transform hover:scale-110">About Us</a>
             <a href="/contact" className="hover:text-gray-400 transition-transform transform hover:scale-110">Contact Us</a>
             <div className="flex space-x-4 mt-2">
-              <a href="https://www.instagram.com/canopux_team/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="w-6 h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
               </a>
-              <a href="https://www.linkedin.com/company/canopux/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="w-6 h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61573815500432" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="w-6 h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
               </a>
-              <a href="https://twitter.com/canopux_team" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                 <FaXTwitter className="w-6 h-6 hover:text-gray-400 transition-transform transform hover:scale-110" />
               </a>
             </div>

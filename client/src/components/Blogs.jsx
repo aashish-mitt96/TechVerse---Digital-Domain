@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axiosInstance from "../utils/axiosInstance"
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -7,10 +8,10 @@ const Blogs = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/blogs")
-      .then((res) => res.json())
-      .then((data) => {
-        const sortedBlogs = data.sort(
+    axiosInstance
+      .get("/blogs")
+      .then((res) => {
+        const sortedBlogs = res.data.sort(
           (a, b) => new Date(b.date) - new Date(a.date)
         );
         setBlogs(sortedBlogs);

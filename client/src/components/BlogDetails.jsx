@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import axiosInstance from "../utils/axiosInstance";
 const BlogDetails = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    window.scrollTo(0,0)
-    fetch(`http://localhost:5000/api/blogs/${id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setBlog(data);
+    window.scrollTo(0, 0);
+    axiosInstance
+      .get(`/blogs/${id}`)
+      .then((res) => {
+        setBlog(res.data);
       })
       .catch((error) => console.error("Error fetching blog:", error));
   }, [id]);
+  
 
   if (!blog || Object.keys(blog).length === 0) {
     return <p className="text-center text-gray-500 mt-10">No blog found.</p>;

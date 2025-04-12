@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv environment variables
+.env
+
+# Logs
+logs/
+*.log
+logfile*
+debug.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.sw?
+
+# Build output
+dist/
+build/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# MongoDB database files (in case you're storing any locally)
+*.pid
+dump/
+*.seed.js
+
+# PM2 process logs
+pids/
+*.pid
+*.log
+
+# Optional: ignore uploads (if storing locally during dev)
+uploads/

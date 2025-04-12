@@ -1,12 +1,11 @@
 import React from "react";
-import Logo from "../assets/Logo.png";
 
 const WelcomeSection = () => {
   return (
-    <section className="relative w-full bg-gray-900 text-white py-16 px-6 md:px-12 text-center pb-8">
+    <section className="relative w-full bg-gray-900 text-white py-16 px-6 mt-5 md:px-12 text-center pb-8">
       <div className="max-w-4xl mx-auto mt-4">
-        <div className="flex flex-col md:flex-row justify-center items-center mb-4 animate-fade-in">
-          <img className="w-36 md:w-48 max-w-full" src={Logo} alt="Canopux Logo" />
+        <div className="flex flex-col md:flex-row justify-center items-center mb-4 gap-18 animate-fade-in">
+          <img className="w-15 md:w-18 ml-7 max-w-full" src="/logo.png" alt="Canopux Logo" />
           <h1 className="text-3xl md:text-5xl font-bold  md:-ml-11"> Welcome to <span className="text-blue-400">TechVerse</span></h1>
         </div>
         <p className="text-lg md:text-xl text-gray-300 leading-relaxed">Stay ahead with the latest insights in{" "}
