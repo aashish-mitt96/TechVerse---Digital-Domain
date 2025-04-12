@@ -7,7 +7,12 @@ import blogRoutes from "./routes/blogRoutes.js";
 dotenv.config();
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173" })); 
+app.use(cors({
+  origin: [ 'http://localhost:5173','http'], 
+  methods: ["POST", "GET", "OPTIONS"], 
+  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization",],
+}));
 app.use(express.json());
 
 app.use("/api/blogs", blogRoutes);
